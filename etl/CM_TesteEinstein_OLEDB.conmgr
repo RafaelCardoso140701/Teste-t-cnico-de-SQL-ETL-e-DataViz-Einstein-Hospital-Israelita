@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="CM_TesteEinstein_OLEDB"
+  DTS:DTSID="{605734C8-99F9-4CEE-AEC0-6ECD9214985B}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost;Initial Catalog=TesteEinstein;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-TesteEinstein_ETL-{605734C8-99F9-4CEE-AEC0-6ECD9214985B}localhost.TesteEinstein;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

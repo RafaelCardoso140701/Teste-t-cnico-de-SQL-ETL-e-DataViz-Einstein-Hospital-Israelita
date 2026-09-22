@@ -1,0 +1,1039 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/23/2026 8:04:26 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-NPH968D"
+  DTS:CreatorName="DESKTOP-NPH968D\PC"
+  DTS:DTSID="{FDE3EFAC-E8BE-48F5-978E-B6601D063F9D}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1016.0"
+  DTS:LocaleID="1046"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{CE99A9A8-8370-451D-9143-AC74C843886E}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CM_Municipios_FlatFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{25021097-6CA7-43FC-963C-9F52312C723F}"
+      DTS:ObjectName="CM_Municipios_FlatFile">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1046"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\TesteEinstein\Dados\Municipios\RELATORIO_DTB_BRASIL_MUNICIPIO.CSV">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UF"
+              DTS:DTSID="{283412F8-A0BC-4C9E-87DB-8A4AA28E9FEA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nome_UF"
+              DTS:DTSID="{706F2F24-E27F-4468-8E6C-4AC8AD2D38FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="4"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Região Geográfica Intermediária"
+              DTS:DTSID="{A7F37235-5424-4E57-9321-ABDBDB2FD5FB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nome Região Geográfica Intermediária"
+              DTS:DTSID="{EB839635-6537-418C-87D3-F0E0A46D444B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Região Geográfica Imediata"
+              DTS:DTSID="{8CFA78C4-838F-434F-B5FC-D7D8D4DFC7E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nome Região Geográfica Imediata"
+              DTS:DTSID="{FB934C19-D3FC-4394-A272-C77641E19AEE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mesorregião Geográfica"
+              DTS:DTSID="{3961BB1A-D9B2-4B77-960F-09302B8C6703}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nome_Mesorregião"
+              DTS:DTSID="{EF634FCD-72E0-4FE9-A1D5-8B59B752BEFD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Microrregião Geográfica"
+              DTS:DTSID="{215A13F4-1E4F-4F9A-A257-471EB067ECC9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nome_Microrregião"
+              DTS:DTSID="{54D5D3F0-872E-48AF-ACAA-66A5E46C1050}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Município"
+              DTS:DTSID="{03AFE297-7569-4C1D-934F-D9EFB210FC1F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="7"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Código Município Completo"
+              DTS:DTSID="{E3F2458A-55EE-40E7-83AF-955944127545}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nome_Município"
+              DTS:DTSID="{F92641DC-5960-4DE3-86BB-2342E23E3040}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DFT_Carga_Municipios"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarefa Fluxo de Dados"
+      DTS:DTSID="{B443A53F-1C97-4173-89E2-8504F0DFB073}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DFT_Carga_Municipios"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DFT_Carga_Municipios\Destino OLE DB"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino OLE DB"
+              name="Destino OLE DB"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="O tempo em segundos antes que um comando expire. Zero indica uma expiração infinita."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowset">[dbo].[MunicipiosIBGE]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica a variável que contém o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="O comando SQL a ser executado."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica a página de código de coluna a ser usada quando não há informações de página de código disponíveis a partir da fonte de dados."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forca o uso do valor da propriedade DefaultCodePage durante a descrição dos dados de caractere."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o modo usado para acessar o banco de dados."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se os valores fornecidos para colunas de identidade serão copiados no destino. Se false, os valores para colunas de identidade serão gerados automaticamente no destino. Aplicável apenas se o carregamento rápido estiver ativado."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se as colunas que contêm null terão null inserido no destino. Se false, as colunas que contêm null terão seus valores padrão inseridos no destino. Aplicável apenas se o carregamento rápido estiver ativado."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica as opções a serem usadas com o carregamento rápido. Aplicável apenas se o carregamento rápido estiver ativado."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica quando confirmações são emitidas durante a inserção de dados. Um valor de 0 especifica que uma confirmação será emitida ao final da inserção de dados. Aplicável somente se o carregamento rápido estiver ativado."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_Carga_Municipios\Destino OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="{605734C8-99F9-4CEE-AEC0-6ECD9214985B}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CM_TesteEinstein_OLEDB]"
+                  description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB]"
+                  errorOrTruncationOperation="Inserir"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de Destino OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[UF]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="UF"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CodigoUF]"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[UF]" />
+                    <inputColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[Nome_UF]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Nome_UF"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NomeUF]"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome_UF]" />
+                    <inputColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[Região Geográfica Intermediária]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="Região Geográfica Intermediária"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CodigoRegiaoIntermediaria]"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Região Geográfica Intermediária]" />
+                    <inputColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[Nome Região Geográfica Intermediária]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Nome Região Geográfica Intermediária"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NomeRegiaoIntermediaria]"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome Região Geográfica Intermediária]" />
+                    <inputColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[Região Geográfica Imediata]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="Região Geográfica Imediata"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CodigoRegiaoImediata]"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Região Geográfica Imediata]" />
+                    <inputColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[Nome Região Geográfica Imediata]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Nome Região Geográfica Imediata"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NomeRegiaoImediata]"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome Região Geográfica Imediata]" />
+                    <inputColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[Mesorregião Geográfica]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="Mesorregião Geográfica"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CodigoMesorregiao]"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Mesorregião Geográfica]" />
+                    <inputColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[Nome_Mesorregião]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Nome_Mesorregião"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NomeMesorregiao]"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome_Mesorregião]" />
+                    <inputColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[Microrregião Geográfica]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="Microrregião Geográfica"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CodigoMicrorregiao]"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Microrregião Geográfica]" />
+                    <inputColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[Nome_Microrregião]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Nome_Microrregião"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NomeMicrorregiao]"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome_Microrregião]" />
+                    <inputColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[Município]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="Município"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CodigoMunicipio]"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Município]" />
+                    <inputColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[Código Município Completo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="7"
+                      cachedName="Código Município Completo"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CodigoMunicipioCompleto]"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Código Município Completo]" />
+                    <inputColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].Columns[Nome_Município]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Nome_Município"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NomeMunicipio]"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome_Município]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CodigoUF]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="CodigoUF" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NomeUF]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="NomeUF" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CodigoRegiaoIntermediaria]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="CodigoRegiaoIntermediaria" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NomeRegiaoIntermediaria]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="NomeRegiaoIntermediaria" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CodigoRegiaoImediata]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="CodigoRegiaoImediata" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NomeRegiaoImediata]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="NomeRegiaoImediata" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CodigoMesorregiao]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="CodigoMesorregiao" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NomeMesorregiao]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="NomeMesorregiao" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CodigoMicrorregiao]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="CodigoMicrorregiao" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NomeMicrorregiao]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="NomeMicrorregiao" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CodigoMunicipio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="CodigoMunicipio" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[CodigoMunicipioCompleto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      name="CodigoMunicipioCompleto" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[NomeMunicipio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="NomeMunicipio" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB].ExternalColumns[DataCarga]"
+                      dataType="dbTimeStamp2"
+                      name="DataCarga" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_Carga_Municipios\Destino OLE DB.Outputs[Saída de Erro de Destino OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Destino OLE DB"
+                  synchronousInputId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Carga_Municipios\Destino OLE DB.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Destino OLE DB.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Carga_Municipios\Destino OLE DB.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origem de Arquivo Simples;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+              description="Origem de Arquivo Simples"
+              localeId="1046"
+              name="Origem de Arquivo Simples"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica se colunas de comprimento zero são tratadas como nulas."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica o nome de uma coluna de saída que contém o nome do arquivo. Se nenhum nome for especificado, nenhuma coluna de saída contendo o nome de arquivo será gerada."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CM_Municipios_FlatFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[CM_Municipios_FlatFile]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples]"
+                  name="Saída de Origem de Arquivo Simples">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[UF]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[UF]"
+                      length="2"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[UF]"
+                      name="UF"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome_UF]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Nome_UF]"
+                      length="100"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome_UF]"
+                      name="Nome_UF"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Região Geográfica Intermediária]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Região Geográfica Intermediária]"
+                      length="4"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Região Geográfica Intermediária]"
+                      name="Região Geográfica Intermediária"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome Região Geográfica Intermediária]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Nome Região Geográfica Intermediária]"
+                      length="100"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome Região Geográfica Intermediária]"
+                      name="Nome Região Geográfica Intermediária"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Região Geográfica Imediata]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Região Geográfica Imediata]"
+                      length="6"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Região Geográfica Imediata]"
+                      name="Região Geográfica Imediata"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome Região Geográfica Imediata]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Nome Região Geográfica Imediata]"
+                      length="100"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome Região Geográfica Imediata]"
+                      name="Nome Região Geográfica Imediata"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Mesorregião Geográfica]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Mesorregião Geográfica]"
+                      length="2"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Mesorregião Geográfica]"
+                      name="Mesorregião Geográfica"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome_Mesorregião]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Nome_Mesorregião]"
+                      length="100"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome_Mesorregião]"
+                      name="Nome_Mesorregião"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Microrregião Geográfica]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Microrregião Geográfica]"
+                      length="3"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Microrregião Geográfica]"
+                      name="Microrregião Geográfica"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome_Microrregião]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Nome_Microrregião]"
+                      length="100"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome_Microrregião]"
+                      name="Nome_Microrregião"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Município]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Município]"
+                      length="5"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Município]"
+                      name="Município"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Código Município Completo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Código Município Completo]"
+                      length="7"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Código Município Completo]"
+                      name="Código Município Completo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome_Município]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Nome_Município]"
+                      length="100"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].Columns[Nome_Município]"
+                      name="Nome_Município"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[UF]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="UF" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Nome_UF]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Nome_UF" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Região Geográfica Intermediária]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="Região Geográfica Intermediária" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Nome Região Geográfica Intermediária]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Nome Região Geográfica Intermediária" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Região Geográfica Imediata]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="Região Geográfica Imediata" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Nome Região Geográfica Imediata]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Nome Região Geográfica Imediata" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Mesorregião Geográfica]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="Mesorregião Geográfica" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Nome_Mesorregião]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Nome_Mesorregião" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Microrregião Geográfica]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="Microrregião Geográfica" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Nome_Microrregião]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Nome_Microrregião" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Município]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="Município" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Código Município Completo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      name="Código Município Completo" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Nome_Município]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Nome_Município" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Erro de Origem de Arquivo Simples]"
+                  isErrorOut="true"
+                  name="Saída de Erro de Origem de Arquivo Simples">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[Coluna de Saída de Erro de Origem de Arquivo Simples]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Coluna de Saída de Erro de Origem de Arquivo Simples"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[Coluna de Saída de Erro de Origem de Arquivo Simples]"
+                      name="Coluna de Saída de Erro de Origem de Arquivo Simples" />
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DFT_Carga_Municipios.Paths[Saída de Origem de Arquivo Simples]"
+              endId="Package\DFT_Carga_Municipios\Destino OLE DB.Inputs[Entrada de Destino OLE DB]"
+              name="Saída de Origem de Arquivo Simples"
+              startId="Package\DFT_Carga_Municipios\Origem de Arquivo Simples.Outputs[Saída de Origem de Arquivo Simples]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SQL_Truncate_Municipios"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarefa Executar SQL"
+      DTS:DTSID="{F42171C3-5C83-4A39-82D5-23CA1FCC6347}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SQL_Truncate_Municipios"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{605734C8-99F9-4CEE-AEC0-6ECD9214985B}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.MunicipiosIBGE;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restrição]"
+      DTS:CreationName=""
+      DTS:DTSID="{A4C32821-8005-470A-AC74-EF8DCFCEB322}"
+      DTS:From="Package\SQL_Truncate_Municipios"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restrição"
+      DTS:To="Package\DFT_Carga_Municipios" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta seção CDATA contém as informações de layout do pacote. A seção inclui informações como coordenadas (x,y), largura e altura.-->
+<!--Se você editar manualmente esta seção e cometer algum erro, poderá excluí-la. -->
+<!--O pacote ainda poderá ser carregado normalmente, mas as informações de layout anteriores serão perdidas e o designer reorganizará automaticamente os elementos na superfície de design.-->
+<Objects
+  Version="8">
+  <!--Cada nó abaixo conterá propriedades que não afetam o comportamento em tempo de execução.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="195,42"
+          Id="Package\DFT_Carga_Municipios"
+          TopLeft="464,282" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\SQL_Truncate_Municipios"
+          TopLeft="467,146" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restrição]"
+          TopLeft="571.5,188">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-10,94"
+              Start="0,0"
+              End="-10,86.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,43"
+                    Point2="0,47"
+                    Point3="-4,47" />
+                  <mssgle:LineSegment
+                    End="-6,47" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-6,47"
+                    Point2="-10,47"
+                    Point3="-10,51" />
+                  <mssgle:LineSegment
+                    End="-10,86.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DFT_Carga_Municipios">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="213,42"
+          Id="Package\DFT_Carga_Municipios\Origem de Arquivo Simples"
+          TopLeft="342,213" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\DFT_Carga_Municipios\Destino OLE DB"
+          TopLeft="668,215" />
+        <EdgeLayout
+          Id="Package\DFT_Carga_Municipios.Paths[Saída de Origem de Arquivo Simples]"
+          TopLeft="555,235">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="113,0"
+              Start="0,0"
+              End="105.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="105.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Carga_Municipios\Destino OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
